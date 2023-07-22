@@ -98,7 +98,9 @@ public class Main {
         System.out.println(Arrays.toString(arr.toArray(a)));
         System.out.println(Arrays.toString(arr.toArray(b)));
         System.out.println(Arrays.toString(arr.toArray(c)));
-
+        System.out.println("hashCode of arr: " + arr.hashCode());
+        ArrayList<Integer> newArr = arr;
+        System.out.println("Is newArr equal to arr: " + arr.equals(newArr));
     }
 }
 
