@@ -198,8 +198,7 @@ public class ArrayList<E> implements List<E> {
     public boolean retainAll(List<? extends E> otherList) {
         boolean isModified = false;
         ArrayList<E> otherArray = new ArrayList<>();
-        for (int i = 0; i < otherList.size(); i++) otherArray.add((E) otherList.get(i));
-        System.out.println(otherArray.toString());
+        otherArray.addAll(otherList);
         for (int i = 0; i < currentSize; i++) {
             if(!otherArray.contains((arrayList[i]))) {
                 this.remove(arrayList[i]);
